@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="Fabián Álvarez, Katherine Hernández" />
+	<meta name="keywords" content="sesión, partida, laberinto, jugador" />
+	<title>Partida</title>
+	<link rel="icon" type="image/png" href="./img/logo.png" />
+	<link rel="stylesheet" href="./css/global.css" />
+	<link rel="stylesheet" href="./css/sala-espera-organizador.css" />
+	<link rel="stylesheet" href="./css/tabla.css" />
+	<link rel="stylesheet" href="./css/partida.css" />
+</head>
+
+<body>
+	<header>
+			<div>
+					<img src="./img/logo.png" alt="Logo del sitio" width="50" height="50" />
+					<h1>JUEGO LABERINTO</h1>
+			</div>
+
+			<div>
+					<h1 id="pageTitle">PARTIDA</h1>
+			</div>
+	</header>
+
+	<main>
+			<div id="gameContainer">
+					<div id="gameData">
+							<!-- Marcador -->
+							<table id="inGame" class="playersTable">
+									<thead>
+											<tr>
+													<th>Jugadores</th>
+													<th>Cartas Recolectadas</th>
+													<th>Ficha</th>
+											</tr>
+									</thead>
+									<tbody></tbody>
+							</table>
+
+							<!-- Pieza extra -->
+							<div>
+									<p class="codeLabel">Pieza extra:</p>
+									<div class="extra" onclick="tryRotatePiece()"></div>
+							</div>
+
+							<!-- Carta del jugador -->
+							<div>
+									<p class="codeLabel">Carta:</p>
+									<p id="code">Tesoro</p>
+							</div>
+
+							<!-- Botones -->
+							<button id="endTurn" class="button endButton" type="button" onclick="tryeEndTurn()">
+								Terminar turno
+							</button>
+							
+							<a class="button endButton" onclick="leaveGame()">
+								Abandonar Partida
+							</a>
+					</div>
+
+					<!-- Tablero -->
+					<table id="game" class="board"></table>
+			</div>
+	</main>
+	<script src="./js/partida.js"></script>
+	<script src="./js/display.js"></script>
+</body>
+
+</html>

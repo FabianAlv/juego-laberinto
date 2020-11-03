@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Fabián Álvarez, Katherine Hernández" />
+    <meta name="keywords" content="sesión, partida, laberinto, jugador" />
+    <title>Instrucciones</title>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/instrucciones.css" />
+</head>
+
+<body class="instructions">
+    <header>
+        <div>
+            <img src="./img/logo.png" alt="Logo del sitio" />
+            <h1>JUEGO LABERINTO</h1>
+        </div>
+
+        <h1 id="pageTitle">INSTRUCCIONES</h1>
+    </header>
+
+    <main>
+        <section class="instructionsSection">
+            <h3>Instrucciones generales</h3>
+
+            <ul>
+                <li>
+                    <p>
+                        El jugador que inicia va a ser seleccionado aleatoriamente. De ahí en adelante se va a hacer la ratoción en sentido de las agujas del reloj.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Se va a indicar que jugador tiene el turno utilizando la imagen de un “reloj de arena”
+                        <img src="./img/clock1.png" alt="Reloj de arena" width="20" height="25" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        El tablero siempre se va a construir aleatoriamente y siempre va a haber una pieza que no va a estar dentro del tablero. <br /> Las piezas tienen las siguientes formas:
+                        <img src="./img/i.png" alt="Ficha I" width="25" height="25" />
+                        <img src="./img/l.png" alt="Ficha L" width="25" height="25" />
+                        <img src="./img/t.png" alt="Ficha T" width="25" height="25" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Cada jugador tiene sus propias cartas
+                        <img src="./img/carta.png" alt="Carta" width="20" height="25" /> que tienen palabras en inglés. Lo que el jugador debe hacer es llevar su ficha
+                        <img src="./img/f1.png" alt="Ficha jugador" width="25" height="25" />
+                        <br /> hasta la pieza del tablero que tiene la imagen que corresponde a la palabra de cada carta, esto moviendose por los caminos que las piezas del tablero formaron. <br /> Ejemplo si la palabra dice “bed” hay una pieza en el
+                        tablero con la siguiente imagen:
+                        <img src="./img/bed.png" alt="Bed" width="25" height="25" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Las cartas se van a ir volteando de una en una conforme el jugador vaya llegando a cada imagen.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="instructionsSection">
+            <h3>¿Cómo se juega?</h3>
+            <ol>
+                <li>
+                    <p>
+                        El jugador debe primero introducir la pieza que no está en el tablero por una de las entradas válidas, indicadas con una
+                        <img src="./img/flechaDerecha.png" alt="Bed" width="30" height="25" /><br /> Esto hará que todas las piezas en esa fila o columna se muevan un espacio en la dirección de la flecha haciendo que la <br /> pieza en el extremo opuesto
+                        quede ahora como la pieza sobrante fuera del tablero.
+                        <br />
+                        <strong>* Uno siempre debe introducir la pieza sobrante</strong>
+                        <br />
+                        <strong>
+                * Uno no puede introducir la pieza sobrante por el lugar donde
+                fue expulsada
+              </strong>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        El jugador puede mover su ficha por los caminos que hay en el tablero, cuando ya está seguro del lugar dónde quiere dejar su ficha, debe
+                        <br /> darle click en el botón "Terminar Turno"
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="lastSection" class="instructionsSection">
+            <h3>¿Cómo se gana?</h3>
+            <ul>
+                <li>
+                    <p>
+                        El jugador debe llegar a todas las imágenes de sus cartas, el primero que lo haga gana.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <a class="button endButton" href="index.xhtml">
+        Regresar
+      </a>
+    </main>
+
+    <script src="./js/display.js"></script>
+</body>
+
+</html>

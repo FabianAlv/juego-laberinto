@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Fabián Álvarez, Katherine Hernández" />
+    <meta name="keywords" content="sesión, partida, laberinto, jugador" />
+    <title>Unirse a Sesión</title>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="./img/logo.png" alt="Logo del sitio" width="50" height="50" />
+        <h1>JUEGO LABERINTO</h1>
+      </div>
+
+      <h1 id="pageTitle">UNIRSE A SESIÓN</h1>
+    </header>
+
+    <form>
+      <div>
+        <label class="labelText" for="playerName">Nombre del jugador:</label>
+        <input type="text" id="playerName" name="playerName" />
+      </div>
+
+      <div>
+        <label class="labelText" for="sessionCode">Código de la sesión:</label>
+        <input type="text" id="sessionCode" name="sessionCode" />
+      </div>
+
+      <button class="button endButton" type="button" onclick="joinSession()">
+        Unirse a sesión
+      </button>
+
+      <script src="./js/unirse-sesion.js"></script>
+    </form>
+  </body>
+</html>

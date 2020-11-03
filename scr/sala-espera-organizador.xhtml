@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Fabián Álvarez, Katherine Hernández" />
+    <meta name="keywords" content="sesión, partida, laberinto, jugador" />
+    <title>Sala de Espera del Organizador</title>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/sala-espera-organizador.css" />
+    <link rel="stylesheet" href="./css/tabla.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./img/logo.png" alt="Logo del sitio" width="50" height="50" />
+            <h1>JUEGO LABERINTO</h1>
+        </div>
+
+        <h1 id="pageTitle">SALA DE ESPERA</h1>
+    </header>
+
+    <main>
+        <table class="playersTable">
+            <thead>
+                <tr>
+                    <th>Jugadores Conectados</th>
+                    <th>Victorias</th>
+                </tr>
+            </thead>
+            <tbody id="currentPlayers">
+
+            </tbody>
+        </table>
+
+        <fieldset>
+            <legend id="codeLegend">*Envíe este código a los jugadores</legend>
+            <p id="codeLabel" class="codeLabel">Código de la sesión:</p>
+            <p id="code">AAF66</p>
+        </fieldset>
+
+        <a id="firstEndButton" class="button endButton" onclick="createBoard()">
+        Crear Partida
+      </a>
+        <a class="button endButton" href="./index.xhtml">
+        Cerrar Sesión
+      </a>
+
+        <script src="./js/sala-espera-organizador.js"></script>
+    </main>
+</body>
+
+</html>

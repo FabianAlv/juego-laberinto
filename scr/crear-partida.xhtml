@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Fabián Álvarez, Katherine Hernández" />
+    <meta name="keywords" content="sesión, partida, laberinto, jugador" />
+    <title>Crear Partida</title>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/global.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="./img/logo.png" alt="Logo del sitio" width="50" height="50" />
+        <h1>JUEGO LABERINTO</h1>
+      </div>
+
+      <h1 id="pageTitle">CREAR PARTIDA</h1>
+    </header>
+
+    <form>
+      <div>
+        <label for="rowNumber">Número de filas:</label>
+        <input
+          class="inputNumber"
+          type="number"
+          id="rowNumber"
+          name="rowNumber"
+          min="7"
+          max="12"
+          step="1"
+          value="7"
+        />
+      </div>
+
+      <div>
+        <label for="columnNumber">Número de columnas:</label>
+        <input
+          class="inputNumber"
+          type="number"
+          id="columnNumber"
+          name="columnNumber"
+          min="7"
+          max="12"
+          step="1"
+          value="7"
+        />
+      </div>
+
+      <button class="button endButton" type="button" onclick="createBoard()">
+        Iniciar partida
+      </button>
+
+      <script src="./js/crear-partida.js"></script>
+    </form>
+  </body>
+</html>

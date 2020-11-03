@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&family=Roboto:wght@100&display=swap");
+
+* {
+  font-family: "Port Lligat Sans", sans-serif;
+  --green: #74ac10;
+  --greenTableHead: #9ed64a;
+  --greenTableRow: #b4e06f;
+  --orangeEndTurn: #f0da65;
+}
+
+html {
+  /* Container style */
+  background-image: url("../img/fondo.jpg");
+  height: 100%;
+
+  /* Container beahviour */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html.bigContainer {
+  /* Container style */
+  height: auto;
+}
+
+body {
+  /* Container style */
+  background: rgba(240, 240, 240, 0.78);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+header {
+  /* Container beahviour */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  /* Container beahviour */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin: 0;
+  margin-left: 1rem;
+}
+
+#pageTitle {
+  /* Font style */
+  color: var(--green);
+
+  /* Container behaviour */
+  text-align: end;
+}
+
+ul {
+  /* Container style */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+
+  /* Container behaviour */
+  text-align: center;
+}
+
+.button {
+  /* Font style */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+
+  /* Container style */
+  background-color: white;
+  border: 0.15rem solid var(--green);
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  width: 12rem;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+
+  /* Container behaviour */
+  display: inline-block;
+}
+
+/* ----- Index ----- */
+#lastLiA {
+  margin-bottom: 0;
+}
+
+.button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:focus {
+  outline: none;
+}
+
+form {
+  /* Container style */
+  margin-top: 2rem;
+
+  /* Container behaviour */
+  text-align: center;
+}
+
+label {
+  /* Font style */
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+label.labelText {
+  /* Container behaviour */
+  display: block;
+}
+
+input {
+  /* Font style */
+  font-size: 1.4rem;
+
+  /* Container style */
+  border: 0.15rem solid var(--greenTableHead);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ----- Crear Partida ----- */
+input.inputNumber {
+  /* Container style */
+  width: 3rem;
+  /* Margin not necesarry because label is in the same line */
+  margin-top: 0;
+  margin-left: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.endButton {
+  margin: 0rem;
+}
+
+main {
+  /* Container style */
+  margin-top: 2rem;
+
+  /* Container behaviour */
+  text-align: center;
+}
+
+/* ----- Acerca De ----- */
+#iconCreators {
+  /* Container style */
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 450px) {
+  header {
+    /* Container behaviour */
+    display: block;
+  }
+
+  header img {
+    /* Container style */
+    width: 40px;
+  }
+
+  h1 {
+    /* Font style */
+    font-size: 1.2rem;
+
+    /* Container style */
+    margin-left: 0.5rem;
+  }
+
+  #pageTitle {
+    /* Container style */
+    margin-top: 0.5rem;
+    margin-left: 0;
+
+    /* Container behaviour */
+    text-align: center;
+  }
+
+  .button {
+    /* Font style */
+    font-size: 1.2rem;
+
+    /* Container style */
+    width: 9rem;
+    padding: 0.5rem;
+  }
+
+  label {
+    /* Font style */
+    font-size: 1.17rem;
+  }
+
+  input {
+    /* Font style */
+    font-size: 1.17rem;
+  }
+
+  input.inputNumber {
+    /* Container style */
+    width: 2rem;
+  }
+}

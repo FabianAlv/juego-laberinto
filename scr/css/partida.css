@@ -1,0 +1,233 @@
+html {
+    height: auto;
+    min-width: fit-content;
+    width: 100%;
+}
+
+body {
+    min-width: 1020px;
+    width: fit-content;
+}
+
+#instructions {
+    /* Container behaviour */
+    text-align: center;
+}
+
+#gameContainer {
+    /* Container behaviour */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#gameData {
+    /* Container style */
+    height: fit-content;
+    margin: 1rem;
+    /* Container behaviour */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#clock {
+    /* Container style */
+    width: 2rem
+}
+
+.playerFigure {
+    /* Container style */
+    width: 50%;
+    max-width: 4rem;
+}
+
+.extraPiece {
+    /* Container style */
+    border: 0.15rem solid var(--greenTableHead);
+    border-radius: 0.5rem;
+    max-width: 7rem;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.extraPiece:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+#imgRotar {
+    width: 10%;
+    height: 10%;
+}
+
+#code {
+    /* Container style */
+    margin: 0;
+}
+
+#endTurn {
+    /* Container style */
+    border-color: var(--orangeEndTurn);
+}
+
+.board {
+    /* Container style */
+    background-image: url("../img/fondoTablero2.jpg");
+    margin: 0 auto;
+    width: fit-content;
+    /* Container behaviour */
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.notYourTurn {
+    /* Container style */
+    opacity: 70%;
+}
+
+.boardPieceContainer {
+    /* Container behaviour */
+    display: flex;
+    position: relative;
+}
+
+.boardPiece {
+    /* Container style */
+    width: 6rem;
+}
+
+.rotate0 {
+    /* Container behaviour */
+    transform: rotate(0deg);
+}
+
+.rotate90 {
+    /* Container behaviour */
+    transform: rotate(90deg);
+}
+
+.rotate180 {
+    /* Container behaviour */
+    transform: rotate(180deg);
+}
+
+.rotate270 {
+    /* Container behaviour */
+    transform: rotate(270deg);
+}
+
+.verticalArrow {
+    width: 3.5rem;
+}
+
+.horizontalArrow {
+    /* Container style */
+    width: 4rem;
+}
+
+.noArrow {
+    /* Container style */
+    display: none;
+}
+
+.tresure,
+.player {
+    /* Container behaviour */
+    position: absolute;
+    /* Centering */
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.tresure {
+    /* Container style */
+    width: 35%;
+}
+
+.player {
+    /* Container style */
+    width: 40%;
+    z-index: 1;
+    /* Animtaion */
+    transition-property: left, top;
+    transition-duration: 1s;
+}
+
+#player1 {
+    animation-duration: 1s;
+    animation-name: move;
+    animation-fill-mode: forwards;
+}
+
+#gameEndButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.playersTable {
+    /* Container style */
+    max-width: 12rem;
+    margin-bottom: 0;
+}
+
+.playersTable thead th,
+.playersTable tbody th,
+.playersTable tbody td {
+    /* Font style */
+    font-size: 1rem;
+    /* Container style */
+    padding: 0.3rem;
+}
+
+label {
+    /* Font style */
+    font-size: 1.17rem;
+}
+
+.codeLabel {
+    /* Font style */
+    font-size: 1.17rem;
+}
+
+.button {
+    font-size: 1.4rem;
+    width: 11rem;
+    padding: 0.5rem;
+}
+
+@media (max-width: 960px) {
+    header img {
+        /* Container style */
+        width: 40px;
+    }
+    h1 {
+        /* Font style */
+        font-size: 1.2rem;
+        /* Container style */
+        margin-left: 0.5rem;
+    }
+    #pageTitle {
+        /* Container style */
+        margin-left: 0.5rem;
+        /* Container behaviour */
+        text-align: center;
+    }
+    .button {
+        /* Font style */
+        font-size: 1.2rem;
+        /* Container style */
+        width: 9rem;
+        padding: 0.5rem;
+    }
+    #code {
+        /* Font style */
+        font-size: 1.17rem;
+        /* Container style */
+        width: 7rem;
+        padding: 0.5rem;
+        margin-bottom: 0;
+    }
+}

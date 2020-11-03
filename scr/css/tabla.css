@@ -1,0 +1,53 @@
+.playersTable {
+  /* Container style */
+  border: 0.15rem solid var(--green);
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+
+.playersTable thead {
+  /* Container style */
+  background-color: var(--greenTableHead);
+}
+
+.playersTable thead th,
+.playersTable tbody th,
+.playersTable tbody td {
+  /* Font style */
+  font-size: 1.2rem;
+
+  /* Container style */
+  padding: 0.5rem;
+}
+
+.playersTable td {
+  /* Container style */
+  text-align: center;
+}
+
+.playersTable tr {
+  /* Container style */
+  border-bottom: 0.15rem solid var(--green);
+}
+
+.playersTable tbody tr:nth-child(even) {
+  background-color: var(--greenTableRow);
+}
+
+.playersTable tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+@media (max-width: 450px) {
+  .playersTable thead th,
+  .playersTable tbody th,
+  .playersTable tbody td {
+    /* Font style */
+    font-size: 1rem;
+
+    /* Container style */
+    padding: 0.3rem;
+  }
+}

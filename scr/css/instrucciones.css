@@ -1,0 +1,37 @@
+body.instructions {
+  /* Container style */
+  max-width: 40rem;
+}
+
+header img {
+  /* Container style */
+  width: 50px;
+}
+
+.instructionsSection {
+  /* Container behaviour */
+  text-align: left;
+}
+
+.instructionsSection ol {
+  /* Container behaviour */
+  text-align: justify;
+}
+
+.instructionsSection ul {
+  /* Container style */
+  list-style-type: disc;
+  padding-inline-start: 40px;
+  margin-top: 0;
+
+  /* Container behaviour */
+  text-align: justify;
+}
+
+.instructionsSection p {
+  width: fit-content;
+}
+
+#lastSection {
+  margin-bottom: 1.5rem;
+}
